@@ -125,7 +125,7 @@ a {
     .about {
         width: 100%;
         padding: 0 0 20px 0;
-        background: url(/img/bg/bg-about.png) center center no-repeat;
+        background: url(img/bg/bg-about.png) center center no-repeat;
     }
 
 /* ABOUT */
@@ -206,7 +206,7 @@ a {
     .specs-marker {
         width: 37px;
         height: 37px;
-        background: url(/img/specs/tick.png) center center/cover no-repeat;
+        background: url(img/specs/tick.png) center center/cover no-repeat;
     }
 
 /* SPECS */
