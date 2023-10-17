@@ -12,9 +12,23 @@
 	src: url(Rubik/static/Rubik-Bold.ttf); 
 }
 
+.header-wrap, .header-link, 
+.header-item, .reviews-wrap, 
+.footer-wrap, .same-wrap {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
 body {
-    position: relative;
     max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
     color: var(--main-text-color);
     font-family: 'Rubik';
@@ -27,23 +41,20 @@ main {
 
 nav {
     width: 100%;
-    height: 50px;
-    top: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
 }
 
 ul {
-    width: 95%;
+    width: 90%;
+    margin: 0 auto;
     height: 100%;
     padding: 0;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     list-style-type: none;
-}
-
-h1,h2,h3,h4,h5,h6 {
-    margin: 0;
 }
 
 a {
@@ -58,8 +69,13 @@ a {
     background: url(img/bg/bg-screen.png);
 }
 
+.header-wrap {
+    height: 300px;
+    padding: 40px;
+}
+
 .header-text {
-    padding: 80px 0;
+    height: 75%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -81,6 +97,7 @@ a {
     font-weight: 600;
     letter-spacing: 3px;
     text-transform: uppercase;
+    cursor: pointer;
     border: none;
     border-radius: 25px;
     color: var(--main-text-color);
@@ -89,22 +106,11 @@ a {
 }
 
 .header-prod {
-    width: 400px;
-    height: 400px;
-}
-
-.header-wrap, .header-link, 
-.header-item, .reviews-wrap, 
-.footer-wrap {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 300px;
+    height: 300px;
 }
 
 .header-link {
-    width: 90%;
     margin: 20px auto 0 auto;
 }
 
@@ -124,8 +130,15 @@ a {
 
     .about {
         width: 100%;
-        padding: 0 0 20px 0;
         background: url(img/bg/bg-about.png) center center no-repeat;
+    }
+
+    .about-wrap {
+        height: auto;
+    }
+
+    .header-subtitle {
+        margin: 20px 0;
     }
 
 /* ABOUT */
@@ -170,6 +183,7 @@ a {
     }
 
     .specs h2 {
+        font-size: 30px;
         text-align: center;
     }
 
@@ -223,15 +237,22 @@ a {
         margin: 40px auto 0 auto;
     }
 
+    .reviews h2 {
+        font-size: 30px;
+        padding: 15px 0 0 0;
+    }
+
     .reviews h2, .reviews h3 {
         text-align: center;
     }
 
     .reviews-item {
-        width: 250px;
+        max-width: 280px;
+        margin: 0 0 25px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
         border-radius: 30px;
         padding: 20px 0;
         box-shadow: 0px 20px 60px 0px rgba(10, 10, 12, 0.3215686274509804);
@@ -257,16 +278,93 @@ a {
 
     .reviews-profession {
         font-size: 15px;
-        margin: 0 auto;
+        margin: 10px auto;
     }
 
 /* REVIEWS */
+
+/* SAME */
+    .same {
+        width: 100%;
+        padding: 20px 0;
+        background: url(img/bg/bg-reviews.png) center center/cover no-repeat;
+    }
+
+    .same-title {
+        font-size: 30px;
+        margin: 5px 0 25px 0;
+        text-align: center;
+    }
+
+    .same-wrap {
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .same-img {
+        width: 90%;
+        height: 50%;
+    }
+
+    .card-btn {
+        padding: 9px 15px;
+        border: none;
+        border: 2px solid var(--btn-color);
+        background: none;
+        border-radius: 16px;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: var(--btn-color);
+    }
+
+/* SAME */
+
+/* FORM */
+
+    .form {
+        width: 100%;
+        padding: 20px;
+        background: url(img/bg/bg-screen.png);
+    }
+
+    .form-title {
+        font-size: 30px;
+        margin: 0 0 20px 0;
+        text-align: center;
+    }
+
+    .form-wrap {
+        width: 500px;
+        height: 200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    input {
+        height: 50px;
+        padding: 0 0 0 30px;
+        border: 2px solid var(--btn-color);
+        border-radius: 50px;
+        background: none;
+        color: var(--second-text-color);
+        font-size: 20px;
+    }
+
+
+
+/* FORM */
+
 
 
 /* FOOTER */
 footer {
     width: 100%;
-    height: 150px;
+    height: 50px;
     background: var(--footer-bg);
 }
 
